@@ -18,7 +18,7 @@ namespace DemoConsole
         }
         
         static bool ChiaHet3 ()
-        //bai 1
+        //Control bai 1
         {
             bool ketqua;
             int number;
@@ -33,7 +33,7 @@ namespace DemoConsole
                 return ketqua;
         }
         static void inBangCuuChuong()
-        //bai 2
+        //Control bai 2
 
         {
             int endNumber;            
@@ -54,7 +54,7 @@ namespace DemoConsole
             }
         }
         static long TinhTongGiaiThua()
-        //bai 3
+        //Control bai 3
         {
             int endNumber;
             int i = 1;
@@ -77,7 +77,7 @@ namespace DemoConsole
             return sumAll;
         }
         static string Fibonacci()
-        //bai 10
+        //Control bai 10
         {
             int number;
             string ketqua = "0";
@@ -114,16 +114,64 @@ namespace DemoConsole
             }
             return ketqua;
         }
+
+        static void btArray()
+        {
+            int n;
+            int i;
+            int j;
+            int count=0;
+            int[] numbers;
+
+            Console.Write("Nhap so phan tu cua mang: ");
+            n = int.Parse(Console.ReadLine());
+            numbers = new int[n];
+
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("Nhap vao phan tu {0}: ", i + 1);
+                numbers[i] = int.Parse(Console.ReadLine());
+
+            }
+            Console.WriteLine("\n1) Mang da nhap la:");
+            foreach (var item in numbers)
+            {
+                Console.Write(item + "\t");
+            }
+            //=========== Array Bai 2
+            Array.Reverse(numbers);
+            Console.WriteLine("\n2) Mang theo chieu dao nguoc la:");
+            foreach (var item in numbers)
+            {
+                Console.Write(item + "\t");
+            }
+            //=========== Array Bai 3
+
+            for (i = 0; i < n; i++)
+            {
+                for (j = i+1; j < n; j++)
+                {
+                    if (numbers[i] == numbers[j])
+                    {
+                        count += 1;
+                    }                        
+                }                   
+            }
+            Console.Write("\n3) So luong bi trung lap la: " + count);
+
+            //=========== Array Bai 4
+            return;
+        }
         public static void Main(string[] args)
         {
-            ////========================= Bai 1: Kiểm tra chia hết cho 3
+            ////========================= Control Bai 1: Kiểm tra chia hết cho 3
             //bool bai1;
             //bai1 = ChiaHet3();
 
-            ////========================= Bai 2: In bảng cửu chương từ 1 đến n
+            ////========================= Control Bai 2: In bảng cửu chương từ 1 đến n
             //inBangCuuChuong();
 
-            ////========================= Bai 3: Tính tổng giai thừa từ 1 đến n  
+            ////========================= Control Bai 3: Tính tổng giai thừa từ 1 đến n  
             //long tongGiaiThua;
             //tongGiaiThua = TinhTongGiaiThua();
             //Console.WriteLine("Tong giai thua la: " + tongGiaiThua);
@@ -139,8 +187,6 @@ namespace DemoConsole
             ////========================= Bai tap Array: 
             btArray();
 
-            // Bai 9: Tính lãi suất ngân hàng
-            // Bai 10: Tìm các số nguyên tố
 
 
 
