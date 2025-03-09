@@ -128,27 +128,16 @@ namespace DemoConsole
             //tongGiaiThua = TinhTongGiaiThua();
             //Console.WriteLine("Tong giai thua la: " + tongGiaiThua);
 
-            ////========================= Bai 4: Kiểm tra số chính phương
-            ////========================= Bai 5: In số ngày trong tháng
+            ////========================= Control Bai 4: Kiểm tra số chính phương
+            ////========================= Control Bai 5: In số ngày trong tháng
+            ////========================= Control Bai 10: In Fibonacci
+            //string bai10;
+            //bai10 = Fibonacci();
+            //Console.WriteLine("Day Fibonacci: \n" + bai10);
 
 
-
-            ////========================= Bai 10: In Fibonacci
-            string bai10;
-            bai10 = Fibonacci();
-            Console.WriteLine("Day Fibonacci: \n" + bai10);
-            ////========================= Bai 3:  
-            ////========================= Bai 4: 
-            ////========================= Bai 5: 
-            ////========================= Bai 6: Tính ngày của Mẹ, ngày của Cha
-            ////========================= Bai 7: In bảng cửu chương của một số
-            //int number = 9;
-            //int j;
-            //for (j=1; j <= 10; j++)
-            //{
-            //    Console.WriteLine($"{number} x {j} = {number * j}");
-            //}
-            ////========================= Bai 8: In bảng cửu chương từ số đến số
+            ////========================= Bai tap Array: 
+            btArray();
 
             // Bai 9: Tính lãi suất ngân hàng
             // Bai 10: Tìm các số nguyên tố
